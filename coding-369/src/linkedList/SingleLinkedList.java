@@ -87,7 +87,7 @@ public class SingleLinkedList<T> {
     public static void main(String[] args) {
         SingleLinkedList<Integer> singleLinkedList = new SingleLinkedList<>();
         addNodes(singleLinkedList);
-        outputDivisionLine();
+        printDivisionLine();
         deleteNodes(singleLinkedList);
     }
 
@@ -109,7 +109,7 @@ public class SingleLinkedList<T> {
         singleLinkedList.printAll();
     }
 
-    private static void outputDivisionLine() {
+    private static void printDivisionLine() {
         System.out.println("==================division line=====================");
     }
 }
