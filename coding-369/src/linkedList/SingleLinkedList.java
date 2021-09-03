@@ -36,9 +36,7 @@ public class SingleLinkedList<T> {
     }
 
     public Node<T> search(T data) {
-        if (this.head == null) {
-            return null;
-        } else {
+        if (this.head != null) {
             Node<T> node = this.head;
             while (node != null) {
                 if (node.data == data) {
@@ -47,8 +45,8 @@ public class SingleLinkedList<T> {
                     node = node.next;
                 }
             }
-            return null;
         }
+        return null;
     }
 
     public void addNodeInside(T data, T isData) {
