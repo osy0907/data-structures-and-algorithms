@@ -79,10 +79,10 @@ public class DoubleLinkedList<T> {
                 } else {
                     node = node.prev;
                 }
+                }
             }
+            return null;
         }
-        return null;
-    }
 
     public boolean insertToFront(T existedData, T addData) {
         if (this.head == null) {
