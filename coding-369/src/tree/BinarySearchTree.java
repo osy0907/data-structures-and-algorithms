@@ -1,16 +1,5 @@
 package tree;
 
-class Node{
-    Node left;
-    Node right;
-    int value;
-    Node(int data) {
-        this.value = data;
-        this.left = null;
-        this.right = null;
-    }
-}
-
 public class BinarySearchTree {
     Node head = null;
 
@@ -151,6 +140,18 @@ public class BinarySearchTree {
                 currNode = null;
             }
             return true;
+        }
+    }
+
+    public static class Node {
+        Node left;
+        Node right;
+        int value;
+
+        Node(int data) {
+            this.value = data;
+            this.left = null;
+            this.right = null;
         }
     }
 
