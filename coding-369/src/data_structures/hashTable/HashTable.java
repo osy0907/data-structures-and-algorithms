@@ -1,4 +1,4 @@
-package hashTable;
+package data_structures.hashTable;
 
 import org.jetbrains.annotations.NotNull;
 

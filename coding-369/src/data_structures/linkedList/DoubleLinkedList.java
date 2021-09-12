@@ -1,4 +1,4 @@
-package linkedList;
+package data_structures.linkedList;
 
 public class DoubleLinkedList<T> {
     public Node<T> head = null;
