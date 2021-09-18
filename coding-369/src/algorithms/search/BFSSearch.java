@@ -9,8 +9,8 @@ import java.util.HashMap;
 public class BFSSearch {
     public static void main(String[] args) {
         HashMap<String, ArrayList<String>> graph = getGraph();
-        BFSSearch bObject = new BFSSearch();
-        System.out.println(bObject.bfsFunc(graph, "A"));
+        BFSSearch bfsSearch = new BFSSearch();
+        System.out.println(bfsSearch.bfsFunc(graph, "A"));
     }
 
     @NotNull
