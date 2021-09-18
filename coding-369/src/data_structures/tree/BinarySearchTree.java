@@ -1,4 +1,4 @@
-package data_structures.data_structures.tree;
+package data_structures.tree;
 
 public class BinarySearchTree {
     Node head = null;
