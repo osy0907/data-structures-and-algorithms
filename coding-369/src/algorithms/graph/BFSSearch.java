@@ -1,4 +1,4 @@
-package algorithms.search;
+package algorithms.graph;
 
 import org.jetbrains.annotations.NotNull;
 
@@ -6,11 +6,11 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 
-public class DFSSearch {
+public class BFSSearch {
     public static void main(String[] args) {
         HashMap<String, ArrayList<String>> graph = getGraph();
-        DFSSearch dfsSearch = new DFSSearch();
-        System.out.println(dfsSearch.dfsFunc(graph, "A"));
+        BFSSearch bfsSearch = new BFSSearch();
+        System.out.println(bfsSearch.bfsFunc(graph, "A"));
     }
 
     @NotNull
@@ -30,19 +30,23 @@ public class DFSSearch {
         return graph;
     }
 
-    public ArrayList<String> dfsFunc(HashMap<String, ArrayList<String>> graph, String startNode) {
+    public ArrayList<String> bfsFunc(HashMap<String, ArrayList<String>> graph, String startNode) {
         ArrayList<String> visited = new ArrayList<String>();
         ArrayList<String> needVisit = new ArrayList<String>();
 
         needVisit.add(startNode);
+        int count = 0;
 
         while (needVisit.size() > 0) {
-            String node = needVisit.remove(needVisit.size() - 1);
+            count += 1;
+            String node = needVisit.remove(0);
+
             if (!visited.contains(node)) {
                 visited.add(node);
                 needVisit.addAll(graph.get(node));
             }
         }
+        System.out.println(count);
         return visited;
     }
 }
