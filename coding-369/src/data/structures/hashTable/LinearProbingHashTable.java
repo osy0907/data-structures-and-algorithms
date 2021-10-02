@@ -1,4 +1,4 @@
-package data_structures.hashTable;
+package data.structures.hashTable;
 
 import java.util.Objects;
 

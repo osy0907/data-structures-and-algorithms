@@ -1,4 +1,4 @@
-package data_structures.queue;
+package data.structures.queue;
 
 import java.util.ArrayList;
 import java.util.Scanner;

@@ -1,4 +1,4 @@
-package algorithms.dynamic_programming;
+package algorithms.dynamic.programming;
 
 public class Dynamic {
     public int dynamicFunc(int data) {

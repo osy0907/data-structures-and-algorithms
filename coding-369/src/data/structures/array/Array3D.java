@@ -1,4 +1,4 @@
-package data_structures.array;
+package data.structures.array;
 
 public class Array3D {
     public static void main(String[] args) {

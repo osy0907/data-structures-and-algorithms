@@ -1,4 +1,4 @@
-package basicAlgorithms;
+package basic.algorithms;
 
 public class hello {
     public static void main(String[] args) {
